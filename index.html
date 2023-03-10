@@ -6,6 +6,7 @@
     <title>Simple Calculator</title>
     <link rel="icon" type="image/ico" href="./img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
     <meta charset="utf-8">
 </head>
 
@@ -13,28 +14,28 @@
     <div class="calculator-box">
         <div class="calculator">
             <div class="display">
-                <div class="display__current-operation">0</div>
-                <div class="display__current-number">0</div>
+                <div class="display__current-operation" id="current-operation"></div>
+                <div class="display__current-number" id="current-number">0</div>
             </div>
             <div class="calculator__buttons">
                 <button class="button special">C</button>
-                <button class="button special">+/-</button>
+                <button class="button special">D</button>
                 <button class="button special">%</button>
                 <button class="button special">/</button>
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
+                <button class="button number">7</button>
+                <button class="button number">8</button>
+                <button class="button number">9</button>
                 <button class="button special">*</button>
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
+                <button class="button number">4</button>
+                <button class="button number">5</button>
+                <button class="button number">6</button>
                 <button class="button special">-</button>
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
+                <button class="button number">1</button>
+                <button class="button number">2</button>
+                <button class="button number">3</button>
                 <button class="button special">+</button>
-                <button class="button zero">0</button>
-                <button class="button">.</button>
+                <button class="button zero number">0</button>
+                <button class="button number">.</button>
                 <button class="button equals">=</button>
             </div>
         </div>
