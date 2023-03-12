@@ -13,7 +13,7 @@ function addNumber(aNumber) {
             // If it's a dot and it doesn´t have one already
             currentNumber.textContent += aNumber;
         }
-    } else if (currentNumber.textContent.length < 6){
+    } else if (currentNumber.textContent.length < 6) {
         if (currentNumber.textContent == '0') {
             // Erase left zero
             currentNumber.textContent = '';
@@ -73,7 +73,7 @@ function operate(firstNumber, operationString, secondNumber) {
             if (secondNumber == 0) {
                 currentNumber.textContent = snarkyMessage;
             } else {
-                currentNumber.textContent = firstNumber / secondNumber;
+                currentNumber.textContent = Math.round((firstNumber / secondNumber) * 100) / 100;
             }
             break;
         case '*':
